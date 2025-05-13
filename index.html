@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicana Check-Up Hizmetleri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    
+   
+  <script src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo" style="text-align:center;font-size:2.5rem;font-weight:bold;width:100%;">Medicana</div>
+  </header>
+
+  <div class="program-menu">
+    <div class="program-item" onclick="scrollToSection('kadin-checkup')">
+      <div class="program-icon" style="background-image: url('image/kadın.png')"></div>
+      <div class="program-title">Kadın Check Up Programları</div>
+    </div>
+    <div class="program-item" onclick="scrollToSection('erkek-checkup')">
+      <div class="program-icon" style="background-image: url('image/erkek.png')"></div>
+      <div class="program-title">Erkek Check Up Programları</div>
+    </div>
+    <div class="program-item" onclick="scrollToSection('cocuk-checkup')">
+      <div class="program-icon" style="background-image: url('image/çocuk.png')"></div>
+      <div class="program-title">Çocuk Check Up Programları</div>
+    </div>
+    <div class="program-item" onclick="scrollToSection('genc-checkup')">
+      <div class="program-icon" style="background-image: url('image/genç.png')"></div>
+      <div class="program-title">Her Zaman Genç Check Up Programları</div>
+    </div>
+    <div class="program-item" onclick="scrollToSection('tarama-programlari')">
+      <div class="program-icon" style="background-image: url('image/tarama.png')"></div>
+      <div class="program-title">Tarama Programları</div>
+    </div>
+  </div>
+
+  
+
+  <section class="health-form-section">
+    <div class="health-form-bg"></div>
+    <div class="health-form-container">
+      <h2 class="health-form-title">Check-Up ile Sağlığınızı Önceliğiniz Yapın
+      </h2>
+      <form class="health-form">
+        <div class="health-form-group">
+          <label for="hf-name">Ad Soyad</label>
+          <input type="text" id="hf-name" name="hf-name" placeholder="Adınızı ve soyadınızı girin" required>
+        </div>
+        <div class="health-form-group">
+          <label for="hf-phone">Telefon Numaranız</label>
+          <input type="tel" id="hf-phone" name="hf-phone" placeholder="05xx xxx xx xx" required>
+        </div>
+        <div class="health-form-group">
+          <label for="hf-email">E-Posta Adresiniz</label>
+          <input type="email" id="hf-email" name="hf-email" placeholder="ornek@mail.com" required>
+        </div>
+        <div class="health-form-group">
+          <label for="hf-message">Mesajınız</label>
+          <textarea id="hf-message" name="hf-message" placeholder="Eklemek istediğiniz not veya sorunuz..." rows="3"></textarea>
+        </div>
+        <div class="health-form-group health-form-checkbox">
+          <input type="checkbox" id="hf-newsletter" name="hf-newsletter">
+          <label for="hf-newsletter">Bilgi ve güncellemelerden haberdar olmak için Medicana Sağlık Grubu'ndan ticari elektronik ileti almak istiyorum.</label>
+        </div>
+        <div class="health-form-group health-form-checkbox">
+          <input type="checkbox" id="hf-kvkk" name="hf-kvkk" required>
+          <label for="hf-kvkk">Kişisel Verilerin Korunması Hakkında Aydınlatma Yazısını okudum, kabul ediyorum.</label>
+        </div>
+        <button type="submit" class="health-form-submit">Gönder</button>
+      </form>
+    </div>
+  </section>
+
+  
+
+  <!-- Check-Up Nedir ve altındaki bilgi kartları formun altına taşındı -->
+  <section class="section">
+    <h2 class="section-title">Check-Up Nedir?</h2>
+    <p>Check-up, genel sağlık durumunu değerlendirmek ve hastalıkları erken teşhis etmek için yapılan sağlık taramalarını içerir. Check-up yaptırmak, sağlıklı bireylerin sağlık durumlarını genel olarak değerlendirmek ve henüz belirti göstermemiş olası hastalıkları erken evrede tespit edebilmek adına kritik bir süreçtir.</p>
+    <div class="info-cards">
+      <div class="info-card">
+        <h3>Nasıl Yapılır?</h3>
+        <p>Check-up işlemi, doktor muayenesi, laboratuvar testleri ve görüntüleme yöntemlerinden oluşur. Önce doktor tarafından genel sağlık durumunuz değerlendirilir, ardından gerekli testler yapılır.</p>
+      </div>
+      <div class="info-card">
+        <h3>Ne Kadar Sürer?</h3>
+        <p>Standart bir check-up işlemi yaklaşık 2-3 saat sürer. Ancak yapılan testlere ve tetkiklere göre bu süre uzayabilir. Sonuçlar genellikle 1-2 iş günü içinde hazır olur.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="erkek-checkup">
+    <h2 class="section-title">ERKEK CHECK UP PROGRAMLARI</h2>
+    <p>Erkek check-up programları, erkeklerin sağlık risklerini detaylı analiz etmek için hazırlanır. Yeni Yıl Erkek programında akciğer grafisi, ürolojik muayene ve PSA testi bulunur. Executive Erkek programında ise kardiyovasküler tetkikler, prostat analizleri ve kemik yoğunluğu ölçümü gibi ileri düzey testler vardır. Erkeklere yönelik bu programlar, sağlık durumunuzu kapsamlı olarak değerlendirir ve gelecekte oluşabilecek riskleri azaltmaya yardımcı olur.</p>
+    <div class="packages">
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">🥇</span>
+          <h3 class="package-title">Gold Erkek Check Up Programı</h3>
+        </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="summary-icon">🩺</span><span><span class="stat-label">Muayeneler</span> <span class="stat-value">6</span></span></div>
+          <div class="summary-item"><span class="summary-icon">📷</span><span><span class="stat-label">Radyolojik</span> <span class="stat-value">5</span></span></div>
+          <div class="summary-item"><span class="summary-icon">🧪</span><span><span class="stat-label">Laboratuvar</span> <span class="stat-value">38</span></span></div>
+          <div class="summary-item"><span class="summary-icon">❤️</span><span><span class="stat-label">Kardiyolojik</span> <span class="stat-value">2</span></span></div>
+          <div class="summary-item"><span class="summary-icon">🔬</span><span><span class="stat-label">Ölçüm</span> <span class="stat-value">1</span></span></div>
+        </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="gold-erkek">Detayı Gör</button>
+      </div>
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">⭐</span>
+          <h3 class="package-title">Classic Erkek Check Up Programı</h3>
+        </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="summary-icon">🩺</span><span><span class="stat-label">Muayeneler</span> <span class="stat-value">3</span></span></div>
+          <div class="summary-item"><span class="summary-icon">📷</span><span><span class="stat-label">Radyolojik</span> <span class="stat-value">3</span></span></div>
+          <div class="summary-item"><span class="summary-icon">🧪</span><span><span class="stat-label">Laboratuvar</span> <span class="stat-value">31</span></span></div>
+          <div class="summary-item"><span class="summary-icon">❤️</span><span><span class="stat-label">Kardiyolojik</span> <span class="stat-value">2</span></span></div>
+        </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="classic-erkek">Detayı Gör</button>
+      </div>
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">🏥</span>
+          <h3 class="package-title">Kartal Hastanesi Açılışa Özel Erkek Check Up Programı</h3>
+        </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="summary-icon">🩺</span><span><span class="stat-label">Muayeneler</span> <span class="stat-value">3</span></span></div>
+          <div class="summary-item"><span class="summary-icon">📷</span><span><span class="stat-label">Radyolojik</span> <span class="stat-value">3</span></span></div>
+          <div class="summary-item"><span class="summary-icon">🧪</span><span><span class="stat-label">Laboratuvar</span> <span class="stat-value">30</span></span></div>
+          <div class="summary-item"><span class="summary-icon">❤️</span><span><span class="stat-label">Kardiyolojik</span> <span class="stat-value">2</span></span></div>
+        </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="kartal-hastanesi-erkek">Detayı Gör</button>
+      </div>
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">💼</span>
+          <h3 class="package-title">Executive Erkek Check Up Programı</h3>
+        </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="summary-icon">🩺</span><span><span class="stat-label">Muayeneler</span> <span class="stat-value">9</span></span></div>
+          <div class="summary-item"><span class="summary-icon">📷</span><span><span class="stat-label">Radyolojik</span> <span class="stat-value">8</span></span></div>
+          <div class="summary-item"><span class="summary-icon">🧪</span><span><span class="stat-label">Laboratuvar</span> <span class="stat-value">52</span></span></div>
+          <div class="summary-item"><span class="summary-icon">❤️</span><span><span class="stat-label">Kardiyolojik</span> <span class="stat-value">4</span></span></div>
+          <div class="summary-item"><span class="summary-icon">🔬</span><span><span class="stat-label">Ölçüm</span> <span class="stat-value">8</span></span></div>
+        </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="executive-erkek">Detayı Gör</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="kadin-checkup">
+    <h2 class="section-title">KADIN CHECK UP PROGRAMLARI</h2>
+    <p>Kadın check-up paketleri, kadınların sağlığını korumak ve riskleri erkenden belirlemek için özel olarak hazırlanmıştır. Paketlerde jinekolojik muayene, meme ultrasonu, kemik yoğunluğu ölçümü, mamografi ve kalp sağlığı testleri bulunur. Executive Kadın programı, hormon analizleri gibi kapsamlı testlerle genel sağlık durumunuzu detaylı olarak değerlendirir. Kadınların sağlık risklerini erkenden tespit ederek sağlıklı bir geleceğe hazırlanmalarını sağlar.</p>
+    <div class="packages">
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">🥇</span>
+          <h3 class="package-title">Gold Kadın Check Up Programı</h3>
+        </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="stat-label">Muayeneler</span> <span class="stat-value">6</span></div>
+          <div class="summary-item"><span class="stat-label">Radyolojik Tetkikler</span> <span class="stat-value">7</span></div>
+          <div class="summary-item"><span class="stat-label">Laboratuvar Tetkikleri</span> <span class="stat-value">35</span></div>
+          <div class="summary-item"><span class="stat-label">Kardiyolojik Tetkikler</span> <span class="stat-value">2</span></div>
+          <div class="summary-item"><span class="stat-label">Patolojik Tetkikler</span> <span class="stat-value">1</span></div>
+          <div class="summary-item"><span class="stat-label">Ölçüm ve Diğer Tetkikler</span> <span class="stat-value">1</span></div>
+        </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="gold-kadin">Detayı Gör</button>
+      </div>
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">⭐</span>
+          <h3 class="package-title">Classic Kadın Check Up Programı</h3>
+        </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="stat-label">Muayeneler</span> <span class="stat-value">3</span></div>
+          <div class="summary-item"><span class="stat-label">Radyolojik Tetkikler</span> <span class="stat-value">5</span></div>
+          <div class="summary-item"><span class="stat-label">Laboratuvar Tetkikleri</span> <span class="stat-value">27</span></div>
+          <div class="summary-item"><span class="stat-label">Kardiyolojik Tetkikler</span> <span class="stat-value">2</span></div>
+          <div class="summary-item"><span class="stat-label">Patolojik Tetkikler</span> <span class="stat-value">1</span></div>
+          <div class="summary-item"><span class="stat-label">Ölçüm ve Diğer Tetkikler</span> <span class="stat-value">-</span></div>
+        </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="classic-kadin">Detayı Gör</button>
+      </div>
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">🏥</span>
+          <h3 class="package-title">Kartal Hastanesi Açılışa Özel Kadın Check Up Programı</h3>
+        </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="stat-label">Muayeneler</span> <span class="stat-value">3</span></div>
+          <div class="summary-item"><span class="stat-label">Radyolojik Tetkikler</span> <span class="stat-value">4</span></div>
+          <div class="summary-item"><span class="stat-label">Laboratuvar Tetkikleri</span> <span class="stat-value">26</span></div>
+          <div class="summary-item"><span class="stat-label">Kardiyolojik Tetkikler</span> <span class="stat-value">2</span></div>
+          <div class="summary-item"><span class="stat-label">Patolojik Tetkikler</span> <span class="stat-value">1</span></div>
+          <div class="summary-item"><span class="stat-label">Ölçüm ve Diğer Tetkikler</span> <span class="stat-value">-</span></div>
+        </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="kartal-hastanesi-kadin">Detayı Gör</button>
+      </div>
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">💼</span>
+          <h3 class="package-title">Executive Kadın Check Up Programı</h3>
+        </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="stat-label">Muayeneler</span> <span class="stat-value">9</span></div>
+          <div class="summary-item"><span class="stat-label">Radyolojik Tetkikler</span> <span class="stat-value">10</span></div>
+          <div class="summary-item"><span class="stat-label">Laboratuvar Tetkikleri</span> <span class="stat-value">53</span></div>
+          <div class="summary-item"><span class="stat-label">Kardiyolojik Tetkikler</span> <span class="stat-value">4</span></div>
+          <div class="summary-item"><span class="stat-label">Patolojik Tetkikler</span> <span class="stat-value">1</span></div>
+          <div class="summary-item"><span class="stat-label">Ölçüm ve Diğer Tetkikler</span> <span class="stat-value">8</span></div>
+        </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="executive-kadin">Detayı Gör</button>
+      </div>
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">👩‍🍼</span>
+          <h3 class="package-title">Doğum Sonrası Anne Sağlığı Check Up Programı</h3>
+        </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="stat-label">Muayeneler</span> <span class="stat-value">9</span></div>
+          <div class="summary-item"><span class="stat-label">Radyolojik Tetkikler</span> <span class="stat-value">3</span></div>
+          <div class="summary-item"><span class="stat-label">Laboratuvar Tetkikleri</span> <span class="stat-value">17</span></div>
+          <div class="summary-item"><span class="stat-label">Kardiyolojik Tetkikler</span> <span class="stat-value">2</span></div>
+          <div class="summary-item"><span class="stat-label">Patolojik Tetkikler</span> <span class="stat-value">1</span></div>
+          <div class="summary-item"><span class="stat-label">Ölçüm ve Diğer Tetkikler</span> <span class="stat-value">3</span></div>
+        </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="dogum-sonrasi-anne">Detayı Gör</button>
+      </div>
+    </div>
+    </section>
+
+  <section class="section" id="cocuk-checkup">
+    <h2 class="section-title">ÇOCUK CHECK UP PROGRAMLARI</h2>
+    <p>Çocuk check-up programları, 5-17 yaş grubundaki çocukların sağlıklı büyümesini destekler. Programda vitamin-mineral analizleri, enfeksiyon taramaları ve alerji testleri bulunur. Ayrıca çocukların kalp sağlığını analiz eden EKG ve ekokardiyografi gibi tetkikler de yapılır. Çocukların sağlıklı gelişimine destek olan bu testler, olası sağlık risklerini erkenden tespit ederek önlem alınmasını sağlar.</p>
+    <div class="packages">
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">🧒</span>
+          <h3 class="package-title">Çocuğuma Sağlık Check Up Programı</h3>
+        </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="stat-label">Muayeneler</span> <span class="stat-value">5</span></div>
+          <div class="summary-item"><span class="stat-label">Radyolojik Tetkikler</span> <span class="stat-value">3</span></div>
+          <div class="summary-item"><span class="stat-label">Laboratuvar Tetkikleri</span> <span class="stat-value">18</span></div>
+          <div class="summary-item"><span class="stat-label">Kardiyolojik Tetkikler</span> <span class="stat-value">1</span></div>
+          <div class="summary-item"><span class="stat-label">Patolojik Tetkikler</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Ölçüm ve Diğer Tetkikler</span> <span class="stat-value">1</span></div>
+        </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="cocuk-checkup">Detayı Gör</button>
+      </div>
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">💓</span>
+          <h3 class="package-title">Küçük Kalplere Sağlık Check Up Programı</h3>
+        </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="stat-label">Muayeneler</span> <span class="stat-value">1</span></div>
+          <div class="summary-item"><span class="stat-label">Radyolojik Tetkikler</span> <span class="stat-value">1</span></div>
+          <div class="summary-item"><span class="stat-label">Laboratuvar Tetkikleri</span> <span class="stat-value">6</span></div>
+          <div class="summary-item"><span class="stat-label">Kardiyolojik Tetkikler</span> <span class="stat-value">2</span></div>
+          <div class="summary-item"><span class="stat-label">Patolojik Tetkikler</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Ölçüm ve Diğer Tetkikler</span> <span class="stat-value">-</span></div>
+        </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="kucuk-kalplere">Detayı Gör</button>
+      </div>
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">👁️</span>
+          <h3 class="package-title">Göz Sağlığı Çocuk Check Up Programı</h3>
+        </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="stat-label">Muayeneler</span> <span class="stat-value">1</span></div>
+          <div class="summary-item"><span class="stat-label">Radyolojik Tetkikler</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Laboratuvar Tetkikleri</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Kardiyolojik Tetkikler</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Patolojik Tetkikler</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Ölçüm ve Diğer Tetkikler</span> <span class="stat-value">1</span></div>
+        </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="göz-sagligi">Detayı Gör</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="herzaman-genc-checkup">
+    <h2 class="section-title">HER ZAMAN GENÇ CHECK UP PROGRAMLARI</h2>
+    <p>Her Zaman Genç Check-up Programları, 65 yaş üstü bireylere özel olarak hazırlanmıştır. Her Zaman Genç Kadın programında kemik yoğunluğu ölçümü, hormon analizi ve kronik hastalık taramaları yapılır. Erkeklere özel programda ise prostat kontrolleri, kalp ve metabolik hastalıklar değerlendirilir. Bu programlarla ileri yaşlarda oluşabilecek sağlık sorunlarını erkenden fark edebilir ve yaşam kalitenizi artırabilirsiniz.</p>
+    <div class="packages">
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">👵</span>
+          <h3 class="package-title">Her Zaman Genç Kadın (+65) Check Up Programı</h3>
+          </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="stat-label">Muayeneler</span> <span class="stat-value">3</span></div>
+          <div class="summary-item"><span class="stat-label">Radyolojik Tetkikler</span> <span class="stat-value">8</span></div>
+          <div class="summary-item"><span class="stat-label">Laboratuvar Tetkikleri</span> <span class="stat-value">38</span></div>
+          <div class="summary-item"><span class="stat-label">Kardiyolojik Tetkikler</span> <span class="stat-value">2</span></div>
+          <div class="summary-item"><span class="stat-label">Patolojik Tetkikler</span> <span class="stat-value">1</span></div>
+          <div class="summary-item"><span class="stat-label">Ölçüm ve Diğer Tetkikler</span> <span class="stat-value">-</span></div>
+          </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="herzaman-genc-kadin">Detayı Gör</button>
+          </div>
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">🧓</span>
+          <h3 class="package-title">Her Zaman Genç Erkek (+65) Check Up Programı</h3>
+          </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="stat-label">Muayeneler</span> <span class="stat-value">3</span></div>
+          <div class="summary-item"><span class="stat-label">Radyolojik Tetkikler</span> <span class="stat-value">6</span></div>
+          <div class="summary-item"><span class="stat-label">Laboratuvar Tetkikleri</span> <span class="stat-value">38</span></div>
+          <div class="summary-item"><span class="stat-label">Kardiyolojik Tetkikler</span> <span class="stat-value">2</span></div>
+          <div class="summary-item"><span class="stat-label">Patolojik Tetkikler</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Ölçüm ve Diğer Tetkikler</span> <span class="stat-value">-</span></div>
+          </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="herzaman-genc-erkek">Detayı Gör</button>
+          </div>
+          </div>
+  </section>
+
+  <section class="section" id="tarama-programlari">
+    <h2 class="section-title">TARAMA PROGRAMLARI</h2>
+    <p>Sağlık tarama programları vücudunuzdaki önemli organları detaylı bir şekilde analiz ederek olası hastalıkları erkenden tespit etmek amacıyla hazırlanmıştır. Bu programlarda kullanılan Tüm Vücut MR (Panel 1) testi ile beyin, boyun, akciğer ve karaciğer gibi temel organların durumu detaylıca incelenir. Tüm Vücut MR (Panel 2) programında ise böbrekler, pankreas ve sindirim sistemi gibi diğer önemli organların sağlığı değerlendirilir. Bu sayede tümör, metabolik hastalıklar ve diğer ciddi sağlık sorunları erken dönemde fark edilir.
+    <br><br>
+    Kalp ve Akciğer Sağlığı taramalarında, kalp damarları ve akciğer fonksiyonları detaylı bir şekilde analiz edilir. Kalp damar hastalıkları açısından önemli olan Force CT Sanal Anjiyografi, kalp damarlarında oluşabilecek daralma ve tıkanıklıkları henüz belirtiler ortaya çıkmadan tespit eder. Bu testler, kalp krizi riskini belirleyerek önleyici tedbirlerin alınmasını sağlar.
+    <br><br>
+    Tarama programlarında özel grupların ihtiyaçları da dikkate alınmıştır. Doğum Sonrası Anne Sağlığı programında hormonal denge analizleri, vitamin eksikliklerinin belirlenmesi, pelvik muayene ve psikolojik değerlendirmeler yapılır. Böylece annelerin fiziksel ve psikolojik sağlığı desteklenir. Ayrıca yetişkinler ve çocuklar için ayrı ayrı tasarlanan Göz Sağlığı taramalarında görme problemleri ve olası göz hastalıkları erken dönemde belirlenir.
+    <br><br>
+    Düzenli olarak yaptırılan sağlık tarama programları sayesinde, ileride oluşabilecek sağlık sorunlarına karşı zamanında önlem alabilirsiniz.</p>
+    <div class="packages">
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">🎀</span>
+          <h3 class="package-title">Meme Sağlığı Check Up Programı</h3>
+          </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="stat-label">Muayeneler</span> <span class="stat-value">1</span></div>
+          <div class="summary-item"><span class="stat-label">Radyolojik Tetkikler</span> <span class="stat-value">2</span></div>
+          <div class="summary-item"><span class="stat-label">Laboratuvar Tetkikleri</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Kardiyolojik Tetkikler</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Patolojik Tetkikler</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Ölçüm ve Diğer Tetkikler</span> <span class="stat-value">-</span></div>
+        </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="meme-sagligi">Detayı Gör</button>
+      </div>
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">♀️</span>
+          <h3 class="package-title">Kadın Sağlığı Check Up Programı</h3>
+        </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="stat-label">Muayeneler</span> <span class="stat-value">1</span></div>
+          <div class="summary-item"><span class="stat-label">Radyolojik Tetkikler</span> <span class="stat-value">1</span></div>
+          <div class="summary-item"><span class="stat-label">Laboratuvar Tetkikleri</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Kardiyolojik Tetkikler</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Patolojik Tetkikler</span> <span class="stat-value">1</span></div>
+          <div class="summary-item"><span class="stat-label">Ölçüm ve Diğer Tetkikler</span> <span class="stat-value">-</span></div>
+        </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="kadin-sagligi">Detayı Gör</button>
+          </div>
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">🧲</span>
+          <h3 class="package-title">Tüm Vücut Mr (Panel 1) Check Up Programı</h3>
+          </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="stat-label">Muayeneler</span> <span class="stat-value">1</span></div>
+          <div class="summary-item"><span class="stat-label">Radyolojik Tetkikler</span> <span class="stat-value">3</span></div>
+          <div class="summary-item"><span class="stat-label">Laboratuvar Tetkikleri</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Kardiyolojik Tetkikler</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Patolojik Tetkikler</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Ölçüm ve Diğer Tetkikler</span> <span class="stat-value">-</span></div>
+          </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="tum-vucut-mr-panel-1">Detayı Gör</button>
+          </div>
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">🧲</span>
+          <h3 class="package-title">Tüm Vücut Mr (Panel 2) Check Up Programı</h3>
+          </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="stat-label">Muayeneler</span> <span class="stat-value">1</span></div>
+          <div class="summary-item"><span class="stat-label">Radyolojik Tetkikler</span> <span class="stat-value">2</span></div>
+          <div class="summary-item"><span class="stat-label">Laboratuvar Tetkikleri</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Kardiyolojik Tetkikler</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Patolojik Tetkikler</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Ölçüm ve Diğer Tetkikler</span> <span class="stat-value">-</span></div>
+          </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="tum-vucut-mr-panel-2">Detayı Gör</button>
+          </div>
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">❤️‍🩹</span>
+          <h3 class="package-title">Kalp ve Akciğer Sağlığı Check Up Programı</h3>
+          </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="stat-label">Muayeneler</span> <span class="stat-value">3</span></div>
+          <div class="summary-item"><span class="stat-label">Radyolojik Tetkikler</span> <span class="stat-value">2</span></div>
+          <div class="summary-item"><span class="stat-label">Laboratuvar Tetkikleri</span> <span class="stat-value">7</span></div>
+          <div class="summary-item"><span class="stat-label">Kardiyolojik Tetkikler</span> <span class="stat-value">2</span></div>
+          <div class="summary-item"><span class="stat-label">Patolojik Tetkikler</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Ölçüm ve Diğer Tetkikler</span> <span class="stat-value">1</span></div>
+        </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="kalp-ve-akciger-sagligi">Detayı Gör</button>
+      </div>
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">🩺</span>
+          <h3 class="package-title">Force CT Sanal Anjiyografi Check Up Programı</h3>
+          </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="stat-label">Muayeneler</span> <span class="stat-value">2</span></div>
+          <div class="summary-item"><span class="stat-label">Radyolojik Tetkikler</span> <span class="stat-value">2</span></div>
+          <div class="summary-item"><span class="stat-label">Laboratuvar Tetkikleri</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Kardiyolojik Tetkikler</span> <span class="stat-value">2</span></div>
+          <div class="summary-item"><span class="stat-label">Patolojik Tetkikler</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Ölçüm ve Diğer Tetkikler</span> <span class="stat-value">-</span></div>
+          </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="force-ct-sanal-anjiyografi">Detayı Gör</button>
+          </div>
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">👁️</span>
+          <h3 class="package-title">Göz Sağlığı Yetişkin Check Up Programı</h3>
+          </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="stat-label">Muayeneler</span> <span class="stat-value">1</span></div>
+          <div class="summary-item"><span class="stat-label">Radyolojik Tetkikler</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Laboratuvar Tetkikleri</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Kardiyolojik Tetkikler</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Patolojik Tetkikler</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Ölçüm ve Diğer Tetkikler</span> <span class="stat-value">3</span></div>
+          </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="göz-sagligi">Detayı Gör</button>
+          </div>
+      <div class="package-card">
+        <div class="package-header">
+          <span class="package-icon">🩺</span>
+          <h3 class="package-title">Bizden Biri Check Up Programı</h3>
+          </div>
+        <div class="package-summary-flex">
+          <div class="summary-item"><span class="stat-label">Muayeneler</span> <span class="stat-value">1</span></div>
+          <div class="summary-item"><span class="stat-label">Radyolojik Tetkikler</span> <span class="stat-value">1</span></div>
+          <div class="summary-item"><span class="stat-label">Laboratuvar Tetkikleri</span> <span class="stat-value">8</span></div>
+          <div class="summary-item"><span class="stat-label">Kardiyolojik Tetkikler</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Patolojik Tetkikler</span> <span class="stat-value">-</span></div>
+          <div class="summary-item"><span class="stat-label">Ölçüm ve Diğer Tetkikler</span> <span class="stat-value">-</span></div>
+        </div>
+        <a href="#" class="package-btn">Fiyat Sor</a>
+        <button class="package-btn detail-btn" data-package="bizden-biri">Detayı Gör</button>
+      </div>
+          </div>
+  </section>
+
+  <section class="section" id="sss">
+    <h2 class="section-title">Check Up Hakkında Sıkça Sorulan Sorular</h2>
+    
+    <div class="faq-item">
+      <h3>Check up nedir?</h3>
+      <p>Check up, genel sağlık durumunuzu değerlendirmek amacıyla yapılan kapsamlı sağlık taramasıdır.</p>
+    </div>
+    
+    <div class="faq-item">
+      <h3>Check up nasıl yapılır?</h3>
+      <p>Check up sırasında genel sağlık muayenesi, kan testleri ve görüntüleme testleri uygulanır.</p>
+    </div>
+    
+    <div class="faq-item">
+      <h3>Check up hangi bölümde yapılır?</h3>
+      <p>Check up işlemleri genellikle İç Hastalıkları (Dahiliye) bölümünde yapılır. İhtiyaç durumunda diğer bölümler de sürece katılır.</p>
+    </div>
+    
+    <div class="faq-item">
+      <h3>Check up ne kadar sürer?</h3>
+      <p>Seçilen pakete göre, check up ortalama 2 ila 4 saat sürer.</p>
+    </div>
+    
+    <div class="faq-item">
+      <h3>Check up için hangi doktora gidilir?</h3>
+      <p>Check up için ilk olarak İç Hastalıkları (Dahiliye) uzmanına başvurmanız gerekir. Diğer uzmanlara yönlendirme yapılabilir.</p>
+    </div>
+  </section>
+
+
+
+</body>
+<div id="package-detail-modal"></div>
+</html>
